@@ -88,7 +88,11 @@ class ViewController: UIViewController {
                 
                 
             } catch let myError {
-                print(myError)
+                
+                DispatchQueue.main.async {
+                    self.myAlert(title: "User False", message: "No \(user) in My Database")
+                }
+                print("myError==>\(myError)")
             }
             
         } // End of Task
