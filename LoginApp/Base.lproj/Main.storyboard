@@ -123,7 +123,11 @@
                                                 <segue destination="BYZ-38-t0r" kind="show" id="RH1-ce-S3k"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="Item" image="CloudUpload" id="UGQ-ou-CUv"/>
+                                        <barButtonItem key="rightBarButtonItem" title="Item" image="CloudUpload" id="UGQ-ou-CUv">
+                                            <connections>
+                                                <action selector="uploadButton:" destination="yEX-jK-WqV" id="ePl-o3-pAp"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -176,6 +180,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Tlp-hb-WBu"/>
                     </view>
+                    <connections>
+                        <outlet property="nameTextField" destination="Py4-BO-Xml" id="oIs-hc-H5D"/>
+                        <outlet property="passwordTextField" destination="W9Q-mt-wBf" id="3GN-MT-Xxa"/>
+                        <outlet property="userTextField" destination="wFr-Hf-cIK" id="GWd-LU-d2R"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N8B-ut-mmF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
