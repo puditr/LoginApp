@@ -37,7 +37,8 @@ class RegisterViewController: UIViewController {
             // Have Space
             registerAlert(title: "Have Space", message: "Please Fill All Blanks")
         } else {
-            
+            // No Space
+            uploadToServer(name: name, user: user, password: password)
         } // If else
         
         
@@ -56,6 +57,44 @@ class RegisterViewController: UIViewController {
         }))
         
         present(alert, animated: true, completion: nil)
+        
+    }
+    
+    func uploadToServer(name : String, user : String, password : String) -> Void {
+        let myConstant = MyConstant()
+        let urlPHP : String = myConstant.getURLaddUser(name: name, user: user, password: password)
+        let url = URL(string: urlPHP)
+        let request = NSMutableURLRequest(url: url!)
+        let task = URLSession.shared.dataTask(with: request as URLRequest){data, reponse, error in
+            
+            if error != nil {
+                print("Have Error")
+            } else {
+                
+                
+ // Check data Can Readable
+                if let testData = data {
+                    let canReadableData = NSString(data: testData, encoding: String.Encoding.utf8.rawValue)
+                    print("canReadableData==>\(String(describing: canReadableData))")
+                    
+                    if canReadableData! == "true" {
+                        print("Response True")
+                        DispatchQueue.main.async {
+                            self.performSegue(withIdentifier: "BackHome", sender: self)
+                        }
+                        
+                    } else {}
+                    
+                } //if2
+                
+            } // If
+            
+        } //End of Task
+        
+        task.resume()
+        
+        
+        
         
     }
     
