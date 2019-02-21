@@ -12,6 +12,7 @@
 		96E761C1221E500300E7C253 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96E761BF221E500300E7C253 /* Main.storyboard */; };
 		96E761C3221E500400E7C253 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96E761C2221E500400E7C253 /* Assets.xcassets */; };
 		96E761C6221E500400E7C253 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96E761C4221E500400E7C253 /* LaunchScreen.storyboard */; };
+		96E761CE221E5BB000E7C253 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E761CD221E5BB000E7C253 /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		96E761C2221E500400E7C253 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96E761C5221E500400E7C253 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96E761C7221E500400E7C253 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96E761CD221E5BB000E7C253 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				96E761BB221E500300E7C253 /* AppDelegate.swift */,
 				96E761BD221E500300E7C253 /* ViewController.swift */,
 				96E761BF221E500300E7C253 /* Main.storyboard */,
+				96E761CD221E5BB000E7C253 /* RegisterViewController.swift */,
 				96E761C2221E500400E7C253 /* Assets.xcassets */,
 				96E761C4221E500400E7C253 /* LaunchScreen.storyboard */,
 				96E761C7221E500400E7C253 /* Info.plist */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96E761CE221E5BB000E7C253 /* RegisterViewController.swift in Sources */,
 				96E761BE221E500300E7C253 /* ViewController.swift in Sources */,
 				96E761BC221E500300E7C253 /* AppDelegate.swift in Sources */,
 			);
