@@ -81,6 +81,9 @@ class ViewController: UIViewController {
                         print("Authen True")
                     }
                     else {
+                        DispatchQueue.main.async {
+                            self.myAlert(title: "Password False", message: "Please Try Again Password False")
+                        }
                         print("Password False")
                     }
             
